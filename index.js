@@ -21,8 +21,7 @@ function renderEvents() {
     const html = state.events.map(event => `
         <div class="event">
             <h2 class="event-name" data-event-id="${event.id}">${event.name}</h2>
-            <p>Date: ${event.date}</p>
-            <p>Time: ${event.time}</p>
+            <p>Date&Time: ${event.date}</p>
             <p>Location: ${event.location}</p>
             <p class="event-description" id="description-${event.id}" style="display: none;">${event.description}</p>
             <button class="delete-btn" data-event-id="${event.id}">Delete</button>
